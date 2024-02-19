@@ -467,10 +467,10 @@ cat >/etc/nginx/conf.d/xray.conf <<EOF
     server {
              listen 80;
              listen [::]:80;
-             listen 8080;
-             listen [::]:8080;
-             listen 8880;
-             listen [::]:8880;
+             #listen 8080;
+             #listen [::]:8080;
+             #listen 8880;
+             #listen [::]:8880;
              listen 2082;
              listen [::]:2082;
              listen 443 ssl http2;
@@ -602,8 +602,8 @@ cd
 wget -O fear.zip "https://raw.githubusercontent.com/zhets/ganteng/main/fear.zip"
 unzip fear.zip >/dev/null 2>&1
 chmod +x menu/*
-mv menu/* /usr/local/sbin/
-rm -rf menu fear.zip
+mv fear/* /usr/local/sbin/
+rm -rf fear fear.zip
 mv /root/domain /etc/xray/domain
 if [ -f /root/scdomain ];then
 rm /root/scdomain > /dev/null 2>&1
