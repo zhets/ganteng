@@ -182,6 +182,7 @@ else
 echo "Input Dengan Benar !" ; sleep 1 ; pasang_domain
 fi
 }
+pasang_domain
 
 #install ssh ovpn
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
