@@ -17,7 +17,7 @@ commonname=none
 email=adamspx17@gmail.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/zhets/ScriptAutoInstall-Xdxl/main/password/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/zhets/ScriptAutoInstall-Xdxl/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
